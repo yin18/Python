@@ -1,4 +1,4 @@
-#create a variable
+#CREATE A VARIABLE
 """x = 1
 print(x)
 
@@ -10,6 +10,7 @@ name=input()
 print("Hi")
 print(name)"""
 
+#EXERCISE INFORMATION
 # fullname = input("What is your full name?")
 # print("Hi" + fullname)
 # Age = input("How old are you" + fullname + "?")
@@ -48,6 +49,7 @@ print(name)"""
 # print(hi.endswith("!"))
 # print(hi.startswith("H"))
 
+#EXERCISE PALINDROME
 # s = input()
 #
 # if s == s[::-1]:
@@ -55,7 +57,7 @@ print(name)"""
 # else:
 #     print(s + " is not a palindrome word")
 
-# List
+# LIST
 # # shopping_list = ["eggs", "bread", "bananas", "biscuits", "milk"]
 # # print(type(shopping_list))
 # # shopping_list[1] = "Roti"
@@ -65,6 +67,7 @@ print(name)"""
 # # shopping_list.append("ice cream")
 # # print(shopping_list)
 
+#EXERCISE BIGGEST OF 3 NUMBERS
 # a = input("Number one:")
 # b = input("Number two:")
 # c = input("Number three:")
@@ -75,13 +78,14 @@ print(name)"""
 # else:
 #     print("{} is bigger than {} and {}".format(c, a, b))
 
+#EXERCISE LIST
 # list = [1,2,3,4,5,6,7,8,9,10]
-# new_list = []
-# for x in list:
-#     if x > 5:
-#         new_list.append(x)
-#     else:
-#         continue
-# print(new_list)
+# # new_list = []
+# # for x in list:
+# #     if x > 5:
+# #         new_list.append(x)
+# #     else:
+# #         continue
+# # print(new_list)
 
 
