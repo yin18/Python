@@ -99,9 +99,52 @@
 # print(x.enrol())
 # print(x.intro())
 
-
+name = "Yin"
 import random
+import time
 
 
+def get_tof_statements():
+    statements = []
+    statements.append(["Penguins can fly", "F"])
+    statements.append(["Jupiter is the fifth planet from the sun", "T"])
+    statements.append(["Sydney is the capital of Australia", "F"])
+    return statements
 
-play_gk_quiz()
+
+def play_tof_quiz():
+    # generate tof statements
+    tof_statements = get_tof_statements()
+    # shuffle into the statements and randomises
+    random.shuffle(tof_statements)
+    score = 0
+    for x in tof_statements:
+        print("True or False: " + x[0])
+        guess = input("Enter T or F: ").upper()
+        if guess == x[1]:
+            print("Correct :)")
+            score = score + 1
+            time.sleep(1)
+        else:
+            print("Incorrect :(")
+            time.sleep(1)
+    if score == len(tof_statements):
+        print("You aced it {}! Well done :)".format(name))
+        restart = input("Would you like to play again?").lower()
+        if restart == "Yes":
+            play_tof_quiz()
+        else:
+            quit()
+
+    else:
+        print("Thank you for playing {}, your final score is: {}/".format(name, score) + str(len(tof_statements)))
+
+
+        restart = input("Would you like to play again?").lower()
+        if restart == "Yes":
+            play_tof_quiz()
+        else:
+            quit()
+
+
+play_tof_quiz()

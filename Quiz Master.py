@@ -1,6 +1,7 @@
 import random
 import time
 
+
 def get_tof_statements():
     statements = []
     statements.append(["Penguins can fly", "F"])
@@ -20,14 +21,15 @@ def play_tof_quiz():
         if guess == x[1]:
             print("Correct :)")
             score = score + 1
+            time.sleep(1)
         else:
             print("Incorrect :(")
             time.sleep(1)
-    if score == 3:
+    if score == len(tof_statements):
         print("You aced it {}! Well done :)".format(name))
         quit()
     else:
-        print("Thank you for playing {}, your final score is: {}/3 ".format(name, score))
+        print("Thank you for playing {}, your final score is: {}/".format(name, score) + str(len(tof_statements)))
         quit()
 
 
@@ -43,29 +45,29 @@ def play_gk_quiz():
     gk_statements = get_gk_statements()
     random.shuffle(gk_statements)
     score = 0
-
     for x in gk_statements:
         print("Question: " + x[0])
         guess = input("Answer: ").lower()
         if guess == x[1]:
             print("Correct :)")
             score = score + 1
+            time.sleep(1)
         else:
             print("Incorrect :(")
             time.sleep(1)
-    if score == 3:
+    if score == len(gk_statements):
         print("You aced it {}! Well done :)".format(name))
         quit()
     else:
-        print("Thank you for playing {}, your final score is: {}/3 ".format(name, score))
+        print("Thank you for playing {}, your final score is: {}/".format(name, score) + str(len(gk_statements)))
         quit()
-
 
 
 
 name = input("What is your name?")
 print("Welcome to the Quiz Master {}!".format(name))
 time.sleep(1)
+
 def main_menu():
     print("Please select an option:")
     time.sleep(1)
