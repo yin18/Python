@@ -23,7 +23,6 @@ def play_tof_quiz():
         else:
             print("Incorrect :(")
             time.sleep(1)
-
     if score == 3:
         print("You aced it {}! Well done :)".format(name))
         quit()
