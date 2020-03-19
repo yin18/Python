@@ -22,8 +22,14 @@ def play_tof_quiz():
             score = score + 1
         else:
             print("Incorrect :(")
-    print("{}, your final score is: {}/3 ".format(name, score))
+            time.sleep(1)
 
+    if score == 3:
+        print("You aced it {}! Well done :)".format(name))
+        quit()
+    else:
+        print("Thank you for playing {}, your final score is: {}/3 ".format(name, score))
+        quit()
 
 
 
@@ -47,14 +53,19 @@ def play_gk_quiz():
             score = score + 1
         else:
             print("Incorrect :(")
-    print("{}, your final score is: {}/3 ".format(name, score))
-
+            time.sleep(1)
+    if score == 3:
+        print("You aced it {}! Well done :)".format(name))
+        quit()
+    else:
+        print("Thank you for playing {}, your final score is: {}/3 ".format(name, score))
+        quit()
 
 
 
 
 name = input("What is your name?")
-print("Welcome to the quiz master {}!".format(name))
+print("Welcome to the Quiz Master {}!".format(name))
 time.sleep(1)
 def main_menu():
     print("Please select an option:")
