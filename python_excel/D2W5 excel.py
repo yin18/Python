@@ -14,6 +14,7 @@ worksheet.write("A4", "Zoe")
 row = 0
 column = 1
 
+
 info = ["Name", "Sassy", "CJ"]
 for name in info:
     worksheet.write(row, column, name)
